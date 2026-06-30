@@ -244,9 +244,9 @@
   <!-- random stars -->
   <div class="hero-stars" id="stars"></div>
 
-  <!-- FOTO PRINCIPAL — substitua o src pela foto real do Vozinha -->
+  <!-- FOTO PRINCIPAL -->
   <div class="hero-photo">
-    <img src="FOTO_VOZINHA_AQUI.jpg"
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Vozinha_Cape_Verde_Goalkeeper.jpg/800px-Vozinha_Cape_Verde_Goalkeeper.jpg"
          alt="Vozinha"
          onerror="this.style.display='none'; this.parentElement.querySelector('.ph').style.display='block'; this.parentElement.querySelector('.ph-txt').style.display='block';">
     <div class="ph" style="display:none;">🧤</div>
@@ -273,13 +273,11 @@
     <div class="rule"></div>
 
     <div class="bio-grid">
-      <!-- FOTO EM CAMPO — substitua o src -->
+      <!-- FOTO EM CAMPO -->
       <div class="bio-photo reveal">
-        <img src="FOTO_VOZINHA_CAMPO.jpg"
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Vozinha_Cape_Verde_Goalkeeper.jpg/800px-Vozinha_Cape_Verde_Goalkeeper.jpg"
              alt="Vozinha em campo"
-             onerror="this.style.display='none'">
-        <div class="ph">📸</div>
-        <div class="ph-txt">Foto do Vozinha<br>em Campo</div>
+             style="width:100%;height:100%;object-fit:cover;">
       </div>
 
       <div class="bio-items">
@@ -321,11 +319,8 @@
     <div class="rule"></div>
 
     <div class="infancia-row reveal">
-      <!-- FOTO DE INFÂNCIA — substitua o src -->
+      <!-- FOTO DE INFÂNCIA — adicione uma foto aqui se tiver -->
       <div class="child-photo">
-        <img src="FOTO_VOZINHA_INFANCIA.jpg"
-             alt="Vozinha pequeno"
-             onerror="this.style.display='none'">
         <div class="ph">👶</div>
         <div class="ph-txt">Foto de<br>Infância</div>
       </div>
@@ -430,10 +425,17 @@
     <h2 class="sec-title reveal" style="text-align:center;">Vozinha após o jogo<br>contra a Espanha 🇪🇸</h2>
 
     <div class="video-box reveal">
-      <video controls playsinline preload="metadata">
-        <source src="https://media.discordapp.net/attachments/1191498062443577386/1521317114823053433/ssstik.io_deyvizin0_1782780418864.mp4?ex=6a446478&is=6a4312f8&hm=4ba41708ca50e6c3058c4ee767846f01c9e5e2024df08ecb74d3ef86db70d88d&" type="video/mp4">
+      <!-- ⚠️ LINK DO DISCORD EXPIROU — substitua o src abaixo pelo novo link do vídeo -->
+      <!-- Opções: novo link Discord, YouTube embed, ou Google Drive -->
+      <video controls playsinline preload="metadata" id="videoVozinha">
+        <source src="SEU_VIDEO_AQUI.mp4" type="video/mp4">
         Seu navegador não suporta vídeo HTML5.
       </video>
+      <div id="videoAviso" style="padding:40px;text-align:center;background:#001a4a;">
+        <div style="font-size:32px;margin-bottom:12px;">🎥</div>
+        <div style="font-size:16px;color:var(--yellow);font-weight:700;margin-bottom:8px;">Cole o novo link do vídeo</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.6);">O link do Discord expirou. Substitua <code style="color:var(--yellow);">SEU_VIDEO_AQUI.mp4</code> pelo novo URL do vídeo.</div>
+      </div>
     </div>
     <p class="video-cap reveal">🎙️ "Sonhei toda minha vida com este momento. Os meus avós são estrelinhas no céu — hoje estariam muito orgulhosos."</p>
   </div>
