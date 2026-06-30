@@ -175,8 +175,8 @@
       border: 3px solid var(--yellow);
       box-shadow: 0 0 60px rgba(247,209,22,.25);
       margin-top: 32px;
+      background: #000;
     }
-    .video-box video { width: 100%; display: block; max-height: 520px; background: #000; }
     .video-cap { margin-top: 18px; font-size: 15px; color: rgba(255,255,255,.65); font-style: italic; }
 
     /* ── SKILLS ── */
@@ -246,10 +246,10 @@
 
   <!-- FOTO PRINCIPAL -->
   <div class="hero-photo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Vozinha_Cape_Verde_Goalkeeper.jpg"
+    <img src="https://media.zenfs.com/en/list_wire_usa_today_articles_325/839a61dd2b731fd4f7b93f74c360be21"
          alt="Vozinha"
-         crossorigin="anonymous"
-         onerror="this.style.display='none'; this.parentElement.querySelector('.ph').style.display='block'; this.parentElement.querySelector('.ph-txt').style.display='block';">
+         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e0/Vozinha_Cape_Verde_Goalkeeper.jpg'"
+         style="width:100%;height:100%;object-fit:cover;object-position:top center;">
     <div class="ph" style="display:none;">🧤</div>
     <div class="ph-txt" style="display:none;">Foto do<br>Vozinha</div>
   </div>
@@ -276,10 +276,10 @@
     <div class="bio-grid">
       <!-- FOTO EM CAMPO -->
       <div class="bio-photo reveal">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Vozinha_Cape_Verde_Goalkeeper.jpg"
+        <img src="https://media.zenfs.com/en/list_wire_usa_today_articles_325/839a61dd2b731fd4f7b93f74c360be21"
              alt="Vozinha em campo"
-             crossorigin="anonymous"
-             style="width:100%;height:100%;object-fit:cover;">
+             onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e0/Vozinha_Cape_Verde_Goalkeeper.jpg'"
+             style="width:100%;height:100%;object-fit:cover;object-position:top center;">
       </div>
 
       <div class="bio-items">
@@ -426,13 +426,14 @@
     <p class="eyebrow reveal" style="text-align:center;">Depoimento</p>
     <h2 class="sec-title reveal" style="text-align:center;">Vozinha após o jogo<br>contra a Espanha 🇪🇸</h2>
 
-    <div class="video-box reveal">
-      <!-- ⚠️ LINK DO DISCORD EXPIROU — substitua o src abaixo pelo novo link do vídeo -->
-      <!-- Opções: novo link Discord, YouTube embed, ou Google Drive -->
-      <video controls playsinline preload="metadata" id="videoVozinha">
-        <source src="https://media.discordapp.net/attachments/1191498062443577386/1521317114823053433/ssstik.io_deyvizin0_1782780418864.mp4?ex=6a446478&is=6a4312f8&hm=4ba41708ca50e6c3058c4ee767846f01c9e5e2024df08ecb74d3ef86db70d88d&" type="video/mp4">
-        Seu navegador não suporta vídeo HTML5.
-      </video>
+    <div class="video-box reveal" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+      <iframe
+        src="https://streamable.com/e/15vpdt?autoplay=0"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; fullscreen"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;">
+      </iframe>
     </div>
     <p class="video-cap reveal">🎙️ "Sonhei toda minha vida com este momento. Os meus avós são estrelinhas no céu — hoje estariam muito orgulhosos."</p>
   </div>
